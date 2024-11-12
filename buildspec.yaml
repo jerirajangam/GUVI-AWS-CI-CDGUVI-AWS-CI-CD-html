@@ -1,12 +1,10 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: openjdk8
   build:
     commands:
-      - echo "Building HTML files"
+      - echo "Building AWS HTML files"
+      - cp -r * /tmp/build/
   post_build:
     commands:
       - echo "Build completed"
