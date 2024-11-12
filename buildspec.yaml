@@ -1,0 +1,16 @@
+version: 1.0
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - echo "Building HTML files"
+  post_build:
+    commands:
+      - echo "Build completed"
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
