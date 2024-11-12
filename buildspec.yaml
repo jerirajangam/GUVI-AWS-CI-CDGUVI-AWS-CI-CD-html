@@ -4,7 +4,6 @@ phases:
   build:
     commands:
       - echo "Building AWS HTML files"
-      - cp -r * /tmp/build/
   post_build:
     commands:
       - echo "Build completed"
